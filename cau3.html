@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let string1 ="hello"
+
+    let string2 = "xin hello chao"
+
+function check(str1, tr2) {
+
+    let check = false;
+    for (let i = 0; i < string2.length; i++) {
+        for (let j = 0; j < string1.length; j++) {
+            if (string1[j] === string2[i]){
+                check = true
+                break;
+            }else {
+                check = false
+            }
+        }
+    }
+    return check
+
+}
+check(string1,string2)
+    console.log(check(string1,string2))
+
+
+  // for (let i = 0; i < string1.length; i ++) {
+  //     for (let j = 0; j < string2.length; j++) {
+  //         if (string1[0] === string2[j]) {
+  //             index = i;
+  //         }
+  //     }
+  // }
+  // console.log('index = ',index)
+  // for (let i = 0; i < string1.length; i++) {
+  //     for (let j = index +i ; j < string2.length; j++) {
+  //         if (string1[i] === string2[index]  ){
+  //             count++
+  //         }
+  //     }
+  // }
+  // console.log('count = ',count)
+  // if (count === string1.length - 1 ) {
+  //     check = true
+  // }else {
+  //     check = false
+  // }
+  // console.log('check = ', check)
+</script>
+</body>
+</html>
